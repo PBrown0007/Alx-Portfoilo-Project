@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/svg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Image Search Engine App</title>
+</head>
+<body>
+    <main>
+        <h1>Image Search Engine</h1>
+        <form name="image-search">
+            <input type="text" id="query" placeholder="Search anything here...">
+            <button type="submit" class="search">Search</button>
+        </form>
+        <div class="advanced-search">
+            <input type="file" id="image-upload" accept="image/*">
+            <label for="image-upload" class="upload-btn">Upload Image</label>
+        </div>
+        <div class="layout-options">
+            <button id="grid-view" class="active">Grid</button>
+            <button id="list-view">List</button>
+        </div>
+        <div class="images">
+        </div>
+        <button class="show-more" hidden>Show more</button>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
